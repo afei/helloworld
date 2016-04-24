@@ -37,7 +37,7 @@ class ProductTest < ActiveSupport::TestCase
   
   
   test "image url" do 
-    ok = = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg http://a.b.c/x/y/z/fred.gif }
+    ok = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg http://a.b.c/x/y/z/fred.gif }
     bad = %w{ fred.doc fred.gif/more fred.gif.more }
     ok.each do |name|
       assert new_product(name).valid?, "#{name} should be valid"
