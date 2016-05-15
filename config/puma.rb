@@ -1,7 +1,5 @@
 #!/usr/bin/env puma
 
-require 'config/environment']
-
 # rails environment
 environment 'development'
 threads 0, 16
@@ -9,7 +7,7 @@ workers 4
 
 # application name, application path
 app_name = "html"
-application_path = "#{Rails.root}"
+application_path = "/var/www/helloworld"
 #application_path = "/Users/ichr/code/workspace/depot"
 directory "#{application_path}"
 
