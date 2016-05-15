@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'wechats/auth', to:'wechats#wechat_auth'
+  post 'wechats/auto', to: 'wechats#wechat_post'
+
+  get 'wechats/wechat_post'
+
   get 'admin' => 'admin#index'
 
 	controller :sessions do

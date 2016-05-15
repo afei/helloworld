@@ -8,7 +8,7 @@ workers 4
 # application name, application path
 app_name = "html"
 application_path = "/var/www/helloworld"
-#application_path = "/Users/ichr/code/workspace/depot"
+# application_path = "/Users/ichr/code/workspace/depot"
 directory "#{application_path}"
 
 # puma configration
