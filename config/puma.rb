@@ -1,5 +1,7 @@
 #!/usr/bin/env puma
 
+require 'config/environment']
+
 # rails environment
 environment 'development'
 threads 0, 16
